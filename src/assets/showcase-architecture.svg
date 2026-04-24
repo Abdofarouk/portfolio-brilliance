@@ -37,7 +37,7 @@
   <text x="850" y="555" fill="#d5e6ff" font-size="28" font-family="Inter, Arial, sans-serif">Core Domain</text>
 
   <rect x="260" y="645" width="1080" height="110" rx="18" fill="#0a2e4d" stroke="url(#accent)" stroke-width="3"/>
-  <text x="300" y="705" fill="#e5f2ff" font-size="34" font-family="Inter, Arial, sans-serif" font-weight="600">AI Control Plane · Data Mesh · Model LCM · Security</text>
+  <text x="300" y="705" fill="#e5f2ff" font-size="34" font-family="Inter, Arial, sans-serif" font-weight="600">AI Control Plane - Data Mesh - Model LCM - Security</text>
 
   <g stroke="url(#accent)" stroke-width="4" fill="none">
     <path d="M790 345v155"/>

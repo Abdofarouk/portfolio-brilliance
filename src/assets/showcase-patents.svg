@@ -26,7 +26,7 @@
   <text x="188" y="486" fill="#d8e8ff" font-size="24" font-family="Inter, Arial, sans-serif">Domain: AI-native telecom systems</text>
 
   <rect x="160" y="530" width="480" height="56" rx="12" fill="#132a47" stroke="#38628f"/>
-  <text x="188" y="566" fill="#d8e8ff" font-size="24" font-family="Inter, Arial, sans-serif">Scope: RAN · Core · OAM · Automation</text>
+  <text x="188" y="566" fill="#d8e8ff" font-size="24" font-family="Inter, Arial, sans-serif">Scope: RAN - Core - OAM - Automation</text>
 
   <rect x="160" y="610" width="480" height="56" rx="12" fill="#132a47" stroke="#38628f"/>
   <text x="188" y="646" fill="#d8e8ff" font-size="24" font-family="Inter, Arial, sans-serif">Impact: Standards + product strategy</text>

@@ -19,7 +19,7 @@
     <path d="M200 0v1000M400 0v1000M600 0v1000M800 0v1000M1000 0v1000M1200 0v1000M1400 0v1000"/>
   </g>
 
-  <text x="80" y="92" fill="#d8e7ff" font-size="32" font-family="Inter, Arial, sans-serif" font-weight="600">ETSI ZSM-012 · AI Enablers for Automation</text>
+  <text x="80" y="92" fill="#d8e7ff" font-size="32" font-family="Inter, Arial, sans-serif" font-weight="600">ETSI ZSM-012 - AI Enablers for Automation</text>
   <text x="80" y="132" fill="#8facd4" font-size="20" font-family="Inter, Arial, sans-serif">Standards execution from requirements to published specification</text>
 
   <rect x="120" y="190" width="1360" height="620" rx="26" fill="#0c1a31" stroke="#2f507a" stroke-width="2"/>

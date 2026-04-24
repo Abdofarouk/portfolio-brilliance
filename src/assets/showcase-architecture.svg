@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">AI-Native 6G Reference Architecture</title>
+  <desc id="desc">Layered system architecture showing RAN, Core, OAM, customer services, and monetization connected through an AI control plane.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071223"/>
+      <stop offset="100%" stop-color="#0c1d37"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2da8ff"/>
+      <stop offset="100%" stop-color="#68e0ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <g stroke="#1f3558" stroke-width="1">
+    <path d="M0 120h1600M0 240h1600M0 360h1600M0 480h1600M0 600h1600M0 720h1600M0 840h1600"/>
+    <path d="M160 0v1000M320 0v1000M480 0v1000M640 0v1000M800 0v1000M960 0v1000M1120 0v1000M1280 0v1000M1440 0v1000"/>
+  </g>
+
+  <text x="80" y="92" fill="#d8e8ff" font-size="32" font-family="Inter, Arial, sans-serif" font-weight="600">AI-Native 6G Reference Architecture</text>
+  <text x="80" y="132" fill="#8facd4" font-size="20" font-family="Inter, Arial, sans-serif">Cross-domain blueprint with observability, security, and model lifecycle</text>
+
+  <rect x="120" y="190" width="1360" height="610" rx="28" fill="#0c1a31" stroke="#2c4a73" stroke-width="2"/>
+
+  <rect x="180" y="250" width="1240" height="95" rx="16" fill="#122743" stroke="#34608e"/>
+  <text x="220" y="305" fill="#d5e6ff" font-size="28" font-family="Inter, Arial, sans-serif">Customer Services + Monetization</text>
+
+  <rect x="180" y="375" width="1240" height="95" rx="16" fill="#122743" stroke="#34608e"/>
+  <text x="220" y="430" fill="#d5e6ff" font-size="28" font-family="Inter, Arial, sans-serif">OAM + Network &amp; Service Management</text>
+
+  <rect x="180" y="500" width="610" height="95" rx="16" fill="#122743" stroke="#34608e"/>
+  <text x="220" y="555" fill="#d5e6ff" font-size="28" font-family="Inter, Arial, sans-serif">RAN Domain</text>
+
+  <rect x="810" y="500" width="610" height="95" rx="16" fill="#122743" stroke="#34608e"/>
+  <text x="850" y="555" fill="#d5e6ff" font-size="28" font-family="Inter, Arial, sans-serif">Core Domain</text>
+
+  <rect x="260" y="645" width="1080" height="110" rx="18" fill="#0a2e4d" stroke="url(#accent)" stroke-width="3"/>
+  <text x="300" y="705" fill="#e5f2ff" font-size="34" font-family="Inter, Arial, sans-serif" font-weight="600">AI Control Plane · Data Mesh · Model LCM · Security</text>
+
+  <g stroke="url(#accent)" stroke-width="4" fill="none">
+    <path d="M790 345v155"/>
+    <path d="M790 470l-20-24"/>
+    <path d="M790 470l20-24"/>
+    <path d="M490 595v50"/>
+    <path d="M1110 595v50"/>
+  </g>
+
+  <g fill="#69dfff">
+    <circle cx="490" cy="610" r="7"/>
+    <circle cx="790" cy="610" r="7"/>
+    <circle cx="1110" cy="610" r="7"/>
+    <circle cx="790" cy="360" r="7"/>
+  </g>
+</svg>

@@ -1,11 +1,11 @@
 import { useState } from "react";
-import imgFiber from "@/assets/showcase-fiber.jpg";
-import imgArch from "@/assets/showcase-architecture.jpg";
-import imgAgents from "@/assets/showcase-agents.jpg";
-import imgMlops from "@/assets/showcase-mlops.jpg";
-import imgRan from "@/assets/showcase-ran.jpg";
-import imgStandards from "@/assets/showcase-standards.jpg";
-import imgPatents from "@/assets/showcase-patents.jpg";
+import imgFiber from "@/assets/showcase-fiber.svg";
+import imgArch from "@/assets/showcase-architecture.svg";
+import imgAgents from "@/assets/showcase-agents.svg";
+import imgMlops from "@/assets/showcase-mlops.svg";
+import imgRan from "@/assets/showcase-ran.svg";
+import imgStandards from "@/assets/showcase-standards.svg";
+import imgPatents from "@/assets/showcase-patents.svg";
 
 type Item = {
   title: string;

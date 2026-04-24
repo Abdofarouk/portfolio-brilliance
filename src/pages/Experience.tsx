@@ -19,7 +19,7 @@ const timeline: Role[] = [
     period: "2026 — Present",
     tag: "current",
     summary:
-      "Define and execute the roadmap for AI‑native network standardization, driving consensus aligned with Nokia's 6G vision.",
+      "Lead AI‑native standardization strategy and execution, converting research direction into globally aligned 6G outcomes.",
     highlights: [
       "Define and execute the roadmap for AI‑native network standardization in alignment with Nokia's vision for 6G.",
       "Drive the creation of novel concepts and architectures for AI‑native networks, including system enablers and integration with 6G Core.",
@@ -36,7 +36,7 @@ const timeline: Role[] = [
     period: "2020 — 2025",
     tag: "past",
     summary:
-      "Lead architect for AI‑native 6G across multiple standards organizations, integrating AI/ML/GenAI into cloud‑native core, RAN and OAM.",
+      "Owned AI‑native 6G architecture direction across multiple standards organizations, connecting AI strategy to deployable telecom blueprints.",
     highlights: [
       "Lead architect for AI‑native 6G across 3GPP, O‑RAN, AI‑RAN Alliance and ITU.",
       "Direct technical projects integrating AI/ML/GenAI into 6G cloud‑native core, RAN and network management — both AI for Network and Network for AI.",
@@ -54,7 +54,7 @@ const timeline: Role[] = [
     period: "2015 — 2020",
     tag: "past",
     summary:
-      "Research and publications on AI/ML‑enabled wireless network optimization, energy efficiency and smart grids.",
+      "Built research foundations in AI/ML‑driven optimization for wireless systems, energy efficiency and smart-grid applications.",
     highlights: [
       "Conducted research and authored publications on AI/ML‑enabled wireless network optimization and energy efficiency.",
       "Collaborated with industry partners in joint BMBF projects on AI‑enabled solutions for smart grids.",
@@ -179,11 +179,11 @@ const Experience = () => {
             Experience
           </p>
           <h1 className="reveal reveal-delay-1 mt-4 max-w-4xl font-display text-5xl font-light leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-            A trajectory from research bench to standards floor.
+            From AI research to operator-ready architecture leadership.
           </h1>
           <p className="reveal reveal-delay-2 mt-6 max-w-2xl text-pretty text-lg text-muted-foreground">
-            Tap any role to expand the detail. Highlights are drawn from delivered work in
-            architecture, standards leadership and team building.
+            Open any role to explore measurable contributions across architecture ownership,
+            standards influence, stakeholder alignment and team leadership.
           </p>
         </div>
       </section>

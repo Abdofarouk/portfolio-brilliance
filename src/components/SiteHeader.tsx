@@ -73,7 +73,7 @@ export const SiteHeader = () => {
         </nav>
 
         <a
-          href="mailto:abdelrahman@abdelkader-online.com"
+          href="mailto:abdelrahman@abdelkader-online.de"
           className={`hidden rounded-full px-4 py-2 text-sm font-medium transition-all md:inline-flex ${
             scrolled || !onDark
               ? "bg-ink text-ink-foreground hover:bg-ink/90"

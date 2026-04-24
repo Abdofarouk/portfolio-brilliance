@@ -117,16 +117,21 @@ const Showcase = () => {
           </div>
         </div>
         <div className="border-t border-hairline bg-secondary/30 py-4">
-          <div className="mx-auto flex max-w-7xl items-center gap-6 overflow-hidden px-6 lg:px-10">
-            <p className="shrink-0 text-xs font-medium uppercase tracking-[0.22em] text-muted-foreground">
+          <div className="mx-auto max-w-7xl px-6 lg:px-10">
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-muted-foreground">
               Role value proposition
             </p>
-            <div className="flex w-max marquee gap-10">
-              {[...valueProps, ...valueProps].map((item, i) => (
-                <span key={i} className="whitespace-nowrap text-sm font-medium tracking-wide text-foreground/70">
-                  {item}
-                </span>
-              ))}
+            <div className="mt-3 overflow-hidden">
+              <div className="flex w-max marquee gap-6 pr-6">
+                {[...valueProps, ...valueProps].map((item, i) => (
+                  <span
+                    key={i}
+                    className="inline-flex whitespace-nowrap rounded-full border border-hairline bg-card/60 px-4 py-1 text-sm font-medium tracking-wide text-foreground/75"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>

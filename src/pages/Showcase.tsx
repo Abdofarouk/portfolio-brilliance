@@ -77,6 +77,13 @@ const items: Item[] = [
 ];
 
 const categories = ["All", "Architecture", "Standards", "Research", "Leadership"] as const;
+const valueProps = [
+  "Architecture Ownership",
+  "Stakeholder Alignment",
+  "Standards Leadership",
+  "Innovation Execution",
+  "Cross-Functional Delivery",
+];
 
 const Showcase = () => {
   const [active, setActive] = useState<(typeof categories)[number]>("All");
@@ -107,6 +114,20 @@ const Showcase = () => {
                 {c}
               </button>
             ))}
+          </div>
+        </div>
+        <div className="border-t border-hairline bg-secondary/30 py-4">
+          <div className="mx-auto flex max-w-7xl items-center gap-6 overflow-hidden px-6 lg:px-10">
+            <p className="shrink-0 text-xs font-medium uppercase tracking-[0.22em] text-muted-foreground">
+              Role value proposition
+            </p>
+            <div className="flex w-max marquee gap-10">
+              {[...valueProps, ...valueProps].map((item, i) => (
+                <span key={i} className="whitespace-nowrap text-sm font-medium tracking-wide text-foreground/70">
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>

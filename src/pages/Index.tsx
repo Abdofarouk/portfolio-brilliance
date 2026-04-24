@@ -18,8 +18,16 @@ const stats = [
   { value: "5", label: "Standards forums" },
 ];
 
-const partners = [
-  "Nokia", "Deutsche Telekom", "3GPP", "O‑RAN", "ETSI", "ITU", "AI‑RAN Alliance", "TU Dresden", "KIT", "Ericsson",
+const strategicFocusAreas = [
+  "AI‑Native Architecture",
+  "RAN Intelligence",
+  "Core Automation",
+  "AIOps",
+  "MLOps / LLMOps",
+  "Network & Service Orchestration",
+  "Interoperability",
+  "TCO Efficiency",
+  "Customer Value Creation",
 ];
 
 const valuePlan = [
@@ -107,8 +115,11 @@ const Index = () => {
 
         {/* Marquee */}
         <div className="relative border-y border-white/10 bg-white/[0.02] py-5">
-          <div className="flex w-max marquee gap-12 px-6">
-            {[...partners, ...partners].map((p, i) => (
+          <p className="px-6 text-xs font-medium uppercase tracking-[0.2em] text-white/45">
+            Strategic focus areas
+          </p>
+          <div className="mt-3 flex w-max marquee gap-12 px-6">
+            {[...strategicFocusAreas, ...strategicFocusAreas].map((p, i) => (
               <span key={i} className="whitespace-nowrap text-sm font-medium tracking-wide text-white/40">
                 {p}
               </span>

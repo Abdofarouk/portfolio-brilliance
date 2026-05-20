@@ -1,5 +1,12 @@
 import { useState } from "react";
 import { ChevronDown, MapPin } from "lucide-react";
+import imgFiber from "@/assets/showcase-fiber.jpg";
+import imgArch from "@/assets/showcase-architecture.jpg";
+import imgAgents from "@/assets/showcase-agents.jpg";
+import imgMlops from "@/assets/showcase-mlops.jpg";
+import imgRan from "@/assets/showcase-ran.jpg";
+import imgStandards from "@/assets/showcase-standards.jpg";
+import imgPatents from "@/assets/showcase-patents.jpg";
 
 type Role = {
   role: string;
@@ -9,6 +16,15 @@ type Role = {
   summary: string;
   highlights: string[];
   tag: "current" | "past" | "edu";
+};
+
+type Item = {
+  title: string;
+  category: "Architecture" | "Standards" | "Research" | "Leadership";
+  blurb: string;
+  image: string;
+  meta: string;
+  accent?: boolean;
 };
 
 const timeline: Role[] = [
@@ -102,6 +118,75 @@ const education = [
   },
 ];
 
+const items: Item[] = [
+  {
+    title: "AI‑Native 6G Reference Architecture",
+    category: "Architecture",
+    blurb:
+      "Operator-ready target architecture spanning RAN, Core, OAM, customer services and monetization with lifecycle governance built in.",
+    image: imgArch,
+    meta: "Cross-domain · Cloud-native",
+    accent: true,
+  },
+  {
+    title: "ETSI ZSM-012 — AI Enablers for Network & Service Automation",
+    category: "Standards",
+    blurb:
+      "Rapporteur role delivering a published ETSI specification for AI enablers in closed-loop network and service automation.",
+    image: imgStandards,
+    meta: "Published Specification",
+  },
+  {
+    title: "Agent-Based Concepts for Telco",
+    category: "Research",
+    blurb:
+      "Integration of generative and agentic AI patterns into cloud-native telco architecture for intent translation, planning and orchestration.",
+    image: imgAgents,
+    meta: "Concept · Prototype",
+  },
+  {
+    title: "MLOps & LLMOps for Telco Workloads",
+    category: "Architecture",
+    blurb:
+      "Lifecycle pipelines, observability and AI workload orchestration tailored for telecom reliability, scalability and security constraints.",
+    image: imgMlops,
+    meta: "Pipelines · LCM",
+  },
+  {
+    title: "AI for the RAN — and the RAN for AI",
+    category: "Research",
+    blurb:
+      "Technical leadership for AI/ML/GenAI in RAN while shaping radio systems that better support emerging AI workloads.",
+    image: imgRan,
+    meta: "O-RAN · AI-RAN Alliance",
+  },
+  {
+    title: "100+ Granted Patents",
+    category: "Leadership",
+    blurb:
+      "Inventor portfolio across AI/ML for wireless networks, automation and 6G, reinforcing execution credibility with innovation depth.",
+    image: imgPatents,
+    meta: "Inventor",
+  },
+  {
+    title: "5G Transmission Protocols",
+    category: "Research",
+    blurb:
+      "Foundational work at Ericsson and TU Dresden on 5G transmission technologies and energy-efficient wireless optimization.",
+    image: imgFiber,
+    meta: "Foundational work",
+  },
+];
+
+const categories = ["All", "Architecture", "Standards", "Research", "Leadership"] as const;
+const valueProps = [
+  "Architecture Ownership",
+  "Stakeholder Alignment",
+  "Standards Leadership",
+  "Innovation Execution",
+  "Cross-Functional Delivery",
+];
+
 const TimelineItem = ({ item, index }: { item: Role; index: number }) => {
   const [open, setOpen] = useState(index === 0);
   return (
@@ -170,20 +255,22 @@ const TimelineItem = ({ item, index }: { item: Role; index: number }) => {
 };
 
 const Experience = () => {
+  const [active, setActive] = useState<(typeof categories)[number]>("All");
+  const filtered = active === "All" ? items : items.filter((i) => i.category === active);
+
   return (
     <>
       {/* Header */}
       <section className="border-b border-hairline bg-background pt-32">
         <div className="mx-auto max-w-7xl px-6 pb-16 lg:px-10 lg:pb-24">
           <p className="reveal text-xs font-medium uppercase tracking-[0.22em] text-accent">
-            Experience
+            Experience & impact
           </p>
           <h1 className="reveal reveal-delay-1 mt-4 max-w-4xl font-display text-5xl font-light leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-            From AI research to operator-ready architecture leadership.
+            A compact, realistic view of background and execution.
           </h1>
           <p className="reveal reveal-delay-2 mt-6 max-w-2xl text-pretty text-lg text-muted-foreground">
-            Open any role to explore measurable contributions across architecture ownership,
-            standards influence, stakeholder alignment and team leadership.
+            Timeline depth and evidence-backed showcase are now combined in one page for faster review.
           </p>
         </div>
       </section>
@@ -196,6 +283,75 @@ const Experience = () => {
               <TimelineItem key={item.role + i} item={item} index={i} />
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* Impact evidence */}
+      <section className="border-y border-hairline bg-secondary/20 py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10">
+          <p className="text-xs font-medium uppercase tracking-[0.22em] text-accent">Impact evidence</p>
+          <h2 className="mt-4 max-w-4xl font-display text-4xl font-light tracking-tight sm:text-5xl">
+            Strategic execution across architecture, standards, research and leadership.
+          </h2>
+          <div className="mt-8 border-y border-hairline bg-background/80 py-4">
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-muted-foreground">
+              Role value proposition
+            </p>
+            <div className="mt-3 overflow-hidden">
+              <div className="flex w-max marquee gap-6 pr-6">
+                {[...valueProps, ...valueProps].map((item, i) => (
+                  <span
+                    key={i}
+                    className="inline-flex whitespace-nowrap rounded-[4px] border border-hairline bg-card px-4 py-1 text-sm font-semibold tracking-wide text-foreground/75"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="mt-8 flex flex-wrap gap-2">
+            {categories.map((c) => (
+              <button
+                key={c}
+                onClick={() => setActive(c)}
+                className={`rounded-[4px] border px-4 py-2 text-sm font-semibold transition-all ${
+                  active === c
+                    ? "border-primary bg-primary text-primary-foreground"
+                    : "border-hairline text-muted-foreground hover:border-foreground/30 hover:text-foreground"
+                }`}
+              >
+                {c}
+              </button>
+            ))}
+          </div>
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {filtered.map((item) => (
+              <article
+                key={item.title}
+                className="group relative flex flex-col overflow-hidden rounded-[6px] border border-hairline bg-card shadow-soft transition-all hover:-translate-y-1 hover:shadow-card"
+              >
+                <div className="relative aspect-[16/10] overflow-hidden bg-secondary">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-700 ease-out-expo group-hover:scale-105"
+                  />
+                  <span className="absolute left-5 top-5 rounded-[4px] bg-white/90 px-3 py-1 text-xs font-semibold tracking-wide text-ink">
+                    {item.category}
+                  </span>
+                </div>
+                <div className="flex flex-1 flex-col justify-between gap-5 p-7">
+                  <div>
+                    <h3 className="font-display text-2xl font-light leading-snug tracking-tight">{item.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.blurb}</p>
+                  </div>
+                  <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{item.meta}</p>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

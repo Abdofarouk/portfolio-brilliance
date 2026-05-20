@@ -13,9 +13,7 @@ type Role = {
 
 type Item = {
   title: string;
-  category: "Architecture" | "Standards" | "Research" | "Leadership";
   blurb: string;
-  meta: string;
 };
 
 const timeline: Role[] = [
@@ -112,52 +110,33 @@ const education = [
 const items: Item[] = [
   {
     title: "AI‑Native 6G Reference Architecture",
-    category: "Architecture",
     blurb:
       "Operator-ready target architecture spanning RAN, Core, OAM, customer services and monetization with lifecycle governance built in.",
-    meta: "Cross-domain · Cloud-native",
   },
   {
     title: "ETSI ZSM-012 — AI Enablers for Network & Service Automation",
-    category: "Standards",
     blurb:
       "Rapporteur role delivering a published ETSI specification for AI enablers in closed-loop network and service automation.",
-    meta: "Published Specification",
   },
   {
     title: "Agent-Based Concepts for Telco",
-    category: "Research",
     blurb:
       "Integration of generative and agentic AI patterns into cloud-native telco architecture for intent translation, planning and orchestration.",
-    meta: "Concept · Prototype",
   },
   {
     title: "MLOps & LLMOps for Telco Workloads",
-    category: "Architecture",
     blurb:
       "Lifecycle pipelines, observability and AI workload orchestration tailored for telecom reliability, scalability and security constraints.",
-    meta: "Pipelines · LCM",
   },
   {
     title: "AI for the RAN — and the RAN for AI",
-    category: "Research",
     blurb:
       "Technical leadership for AI/ML/GenAI in RAN while shaping radio systems that better support emerging AI workloads.",
-    meta: "O-RAN · AI-RAN Alliance",
   },
   {
     title: "100+ Granted Patents",
-    category: "Leadership",
     blurb:
       "Inventor portfolio across AI/ML for wireless networks, automation and 6G, reinforcing execution credibility with innovation depth.",
-    meta: "Inventor",
-  },
-  {
-    title: "5G Transmission Protocols",
-    category: "Research",
-    blurb:
-      "Foundational work at Ericsson and TU Dresden on 5G transmission technologies and energy-efficient wireless optimization.",
-    meta: "Foundational work",
   },
 ];
 
@@ -272,13 +251,9 @@ const Experience = () => {
               >
                 <div className="flex flex-1 flex-col justify-between gap-5 p-7">
                   <div>
-                    <span className="inline-flex rounded-[4px] bg-secondary px-3 py-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                      {item.category}
-                    </span>
                     <h3 className="font-display text-2xl font-light leading-snug tracking-tight">{item.title}</h3>
                     <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.blurb}</p>
                   </div>
-                  <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{item.meta}</p>
                 </div>
               </article>
             ))}

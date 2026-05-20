@@ -24,7 +24,7 @@ const timeline: Role[] = [
     period: "2026 — Present",
     tag: "current",
     summary:
-      "Lead AI‑native standardization strategy and execution, converting research direction into globally aligned 6G outcomes.",
+      "Lead AI‑native standardization strategy and execution, Enable next generation AI standards experts.",
     highlights: [
       "Define and execute the roadmap for AI‑native network standardization in alignment with Nokia's vision for 6G.",
       "Drive the creation of novel concepts and architectures for AI‑native networks, including system enablers and integration with 6G Core.",
@@ -41,7 +41,7 @@ const timeline: Role[] = [
     period: "2020 — 2025",
     tag: "past",
     summary:
-      "Owned AI‑native 6G architecture direction across multiple standards organizations, connecting AI strategy to deployable telecom blueprints.",
+      "Define AI‑native 6G architecture direction across multiple standards organizations",
     highlights: [
       "Lead architect for AI‑native 6G across 3GPP, O‑RAN, AI‑RAN Alliance and ITU.",
       "Direct technical projects integrating AI/ML/GenAI into 6G cloud‑native core, RAN and network management — both AI for Network and Network for AI.",
@@ -111,7 +111,7 @@ const items: Item[] = [
   {
     title: "AI‑Native 6G Reference Architecture",
     blurb:
-      "Operator-ready target architecture spanning RAN, Core, OAM, customer services and monetization with lifecycle governance built in.",
+      "Standards target AI architecture spanning RAN, Core, OAM, customer services and monetization with AI lifecycle and governance built in.",
   },
   {
     title: "ETSI ZSM-012 — AI Enablers for Network & Service Automation",
@@ -121,7 +121,7 @@ const items: Item[] = [
   {
     title: "Agent-Based Concepts for Telco",
     blurb:
-      "Integration of generative and agentic AI patterns into cloud-native telco architecture for intent translation, planning and orchestration.",
+      "Integration of generative and agentic AI patterns into telco architecture for intent translation, planning and orchestration.",
   },
   {
     title: "MLOps & LLMOps for Telco Workloads",
@@ -136,7 +136,7 @@ const items: Item[] = [
   {
     title: "100+ Granted Patents",
     blurb:
-      "Inventor portfolio across AI/ML for wireless networks, automation and 6G, reinforcing execution credibility with innovation depth.",
+      "Inventor portfolio across AI/ML for wireless networks, automation and 6G, supporting impactful contributions to global standards.",
   },
 ];
 
@@ -217,10 +217,10 @@ const Experience = () => {
             Experience & impact
           </p>
           <h1 className="reveal reveal-delay-1 mt-4 max-w-4xl font-display text-5xl font-light leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-            A compact, realistic view of background and execution.
+            Experience and Proven Impact.
           </h1>
           <p className="reveal reveal-delay-2 mt-6 max-w-2xl text-pretty text-lg text-muted-foreground">
-            Timeline depth and evidence-backed showcase are now combined in one page for faster review.
+            From AI-native Telco research, to standards strategy and execution.
           </p>
         </div>
       </section>

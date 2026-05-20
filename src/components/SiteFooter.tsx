@@ -1,12 +1,12 @@
 export const SiteFooter = () => {
   return (
     <footer className="border-t border-hairline bg-background">
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-3 lg:px-10">
+      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[1.35fr_1.1fr_auto] lg:px-10">
         <div>
           <p className="font-display text-2xl tracking-tight">
             Let's build AI-native 6G.
           </p>
-          <p className="mt-3 max-w-sm text-sm text-muted-foreground">
+          <p className="mt-3 max-w-[30rem] text-sm text-muted-foreground">
             Open to discussions on the value potential of AI in 6G network across technology, architecture and business evolution.
           </p>
         </div>
@@ -15,7 +15,7 @@ export const SiteFooter = () => {
             <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">Contact</p>
             <ul className="mt-3 space-y-2">
               <li>
-                <a className="hover:text-accent" href="mailto:abdelrahman@abdelkader-online.com">
+                <a className="text-[0.95rem] font-medium tracking-tight hover:text-accent" href="mailto:abdelrahman@abdelkader-online.com">
                   abdelrahman@abdelkader-online.com
                 </a>
               </li>
@@ -23,7 +23,7 @@ export const SiteFooter = () => {
               <li className="text-muted-foreground">München, Germany</li>
             </ul>
           </div>
-          <div>
+          <div className="lg:pl-5">
             <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">Languages</p>
             <ul className="mt-3 space-y-2 text-muted-foreground">
               <li>Arabic — Native</li>

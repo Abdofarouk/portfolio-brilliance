@@ -85,7 +85,10 @@ const Index = () => {
             <Link
               to="/experience"
               className="inline-flex items-center gap-2 rounded-[4px] border border-white/80 bg-transparent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-
+            >
+              See impact portfolio
+            </Link>
+          </div>
           {/* Stats strip */}
           <dl className="reveal reveal-delay-4 mt-20 grid grid-cols-2 gap-x-8 gap-y-10 border-t border-white/10 pt-10 sm:grid-cols-4">
             {stats.map((s) => (

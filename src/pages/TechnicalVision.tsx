@@ -140,7 +140,7 @@ const TechnicalVision = () => {
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-accent">Physical AI</p>
           <h2 className="mt-4 max-w-4xl font-display text-4xl font-light tracking-tight sm:text-5xl">
-            Sense <span className="text-muted-foreground">-></span> analyze <span className="text-muted-foreground">-></span> act as a telecom physical control loop.
+            Sense <span className="text-muted-foreground">→</span> analyze <span className="text-muted-foreground">→</span> act as a telecom physical control loop.
           </h2>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
             GPU-equipped edge nodes do not only process data. They interpret, reason, and optimize physical

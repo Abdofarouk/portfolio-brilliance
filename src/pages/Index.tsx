@@ -3,31 +3,19 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight, Cpu, Network, Bot, Layers, Radio, GitBranch, Award, Users } from "lucide-react";
 
 const skills = [
-  { icon: Network, title: "AI‑Native 6G Architecture", body: "Own end‑to‑end target architectures across RAN, Core, OAM, customer and monetization domains." },
-  { icon: Bot, title: "Generative & Agentic AI", body: "Apply Deep Learning, GenAI and agent‑based concepts to real operator workflows." },
-  { icon: Layers, title: "Cloud‑Native Telco", body: "Design MLOps/LLMOps lifecycle management and AI workload orchestration for production scale." },
-  { icon: Radio, title: "RAN · Core · OAM", body: "Bridge AI for the network and network for AI across all functional planes." },
+  { icon: Network, title: "AI‑Native 6G Architecture", body: "Own end‑to‑end target AI architectures across RAN, Core, OAM, and monetization domains." },
+  { icon: Bot, title: "Generative & Agentic AI", body: "Apply Deep Learning, GenAI and agent‑based concepts to real network usecases and workflows." },
+  { icon: Layers, title: "AIOps in 6G", body: "Design MLOps/LLMOps lifecycle management and AI workload orchestration in 6G standards." },
+  { icon: Radio, title: "Industry leadership", body: "Recognized AI Telco expert with contributions to 10+ keynotes, webinars, and panel discussions." },
   { icon: GitBranch, title: "Standards Leadership", body: "Drive consensus in 3GPP, O‑RAN, ETSI, ITU and AI‑RAN Alliance; rapporteur of ETSI ZSM‑012." },
-  { icon: Cpu, title: "From Business Need to Delivery", body: "Translate operator priorities into architectural blueprints, RFIs and pilot-ready execution plans." },
+  { icon: Cpu, title: "From Business Need to Execution", body: "Translate business priorities into architectural blueprints,and execution plans." },
 ];
 
 const stats = [
   { value: "100+", label: "Granted patents" },
   { value: "10+", label: "Keynotes & panels" },
   { value: "10+", label: "Peer‑reviewed papers" },
-  { value: "5", label: "Standards forums" },
-];
-
-const strategicFocusAreas = [
-  "AI‑Native Architecture",
-  "RAN Intelligence",
-  "Core Automation",
-  "AIOps",
-  "MLOps / LLMOps",
-  "Network & Service Orchestration",
-  "Interoperability",
-  "TCO Efficiency",
-  "Customer Value Creation",
+  { value: "5+", label: "Standards forums" },
 ];
 
 const valuePlan = [
@@ -76,14 +64,14 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-ink/60 to-ink" />
         <div className="relative mx-auto max-w-7xl px-6 pb-32 pt-28 lg:px-10 lg:pb-44 lg:pt-40">
           <p className="reveal text-xs font-medium uppercase tracking-[0.22em] text-white/60">
-            Lead Architect · Research Team Lead · Munich
+            Lead Architect · Research & Standards Team Lead · Munich
           </p>
           <h1 className="reveal reveal-delay-1 mt-6 max-w-5xl font-display text-5xl font-light leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl xl:text-[5.5rem]">
-            Turning <em className="not-italic text-aurora">AI ambition</em> into operator‑grade network architecture.
+            Turning <em className="not-italic text-aurora">AI ambition</em> into next generation architectural blueprints for global standards.
           </h1>
           <p className="reveal reveal-delay-2 mt-8 max-w-2xl text-pretty text-lg leading-relaxed text-white/70">
-            I am Abdelrahman Abdelkader, Ph.D. and AI‑native telecom architect. I help operators
-            convert strategic AI priorities into secure, scalable blueprints across RAN, Core, OAM,
+            I am Abdelrahman Abdelkader, Ph.D. and AI‑native telecom architect. I drive the
+            conversion of strategic Telco AI priorities into architectural blueprints across RAN, Core, OAM,
             customer services and monetization, then guide execution through standards and pilots.
           </p>
           <div className="reveal reveal-delay-3 mt-10 flex flex-wrap gap-3">
@@ -97,10 +85,6 @@ const Index = () => {
             <Link
               to="/experience"
               className="inline-flex items-center gap-2 rounded-[4px] border border-white/80 bg-transparent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-            >
-              See impact portfolio
-            </Link>
-          </div>
 
           {/* Stats strip */}
           <dl className="reveal reveal-delay-4 mt-20 grid grid-cols-2 gap-x-8 gap-y-10 border-t border-white/10 pt-10 sm:grid-cols-4">
@@ -112,20 +96,6 @@ const Index = () => {
             ))}
           </dl>
         </div>
-
-        {/* Marquee */}
-        <div className="relative border-y border-white/10 bg-white/[0.02] py-5">
-          <p className="px-6 text-xs font-medium uppercase tracking-[0.2em] text-white/45">
-            Strategic focus areas
-          </p>
-          <div className="mt-3 flex w-max marquee gap-12 px-6">
-            {[...strategicFocusAreas, ...strategicFocusAreas].map((p, i) => (
-              <span key={i} className="whitespace-nowrap text-sm font-medium tracking-wide text-white/40">
-                {p}
-              </span>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* SKILLS AT A GLANCE */}
@@ -134,15 +104,15 @@ const Index = () => {
           <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
             <div className="max-w-2xl">
               <p className="text-xs font-medium uppercase tracking-[0.22em] text-accent">
-                Skills at a glance
+                Profile at a glance
               </p>
               <h2 className="mt-4 font-display text-4xl font-light leading-tight tracking-tight sm:text-5xl">
-                Architectural depth with business-first execution.
+                Architecture definition with business-driven strategy.
               </h2>
             </div>
             <p className="max-w-md text-pretty text-muted-foreground">
-              Positioning at the intersection of architecture leadership, standards influence and
-              measurable operator outcomes.
+              Positioning at the intersection of Telco AI architecture, standards leadership, and
+              measurable business outcomes.
             </p>
           </div>
 

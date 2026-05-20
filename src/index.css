@@ -1,59 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    /* Apple-minimalist palette: ink on porcelain with sapphire accent */
-    --background: 40 20% 98%;
-    --foreground: 222 30% 9%;
+    /* Telekom brand palette */
+    --telekom-magenta: #e20074;
+    --telekom-black: #000000;
+    --telekom-white: #ffffff;
+    --telekom-gray-dark: #262626;
+    --telekom-gray-mid: #737373;
+    --telekom-gray-light: #f2f2f2;
 
+    /* Semantic mapping */
+    --color-primary: var(--telekom-magenta);
+    --color-text-main: var(--telekom-gray-dark);
+    --color-text-muted: var(--telekom-gray-mid);
+    --color-bg-main: var(--telekom-white);
+    --color-bg-surface: var(--telekom-gray-light);
+    --color-border: #d9d9d9;
+
+    /* Tailwind HSL token bridge */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 15%;
     --card: 0 0% 100%;
-    --card-foreground: 222 30% 9%;
-
+    --card-foreground: 0 0% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222 30% 9%;
-
-    --primary: 222 47% 11%;
-    --primary-foreground: 40 20% 98%;
-
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 222 30% 9%;
-
-    --muted: 220 14% 95%;
-    --muted-foreground: 220 9% 42%;
-
-    --accent: 214 95% 52%;
+    --popover-foreground: 0 0% 15%;
+    --primary: 329 100% 44%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 15%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 329 100% 44%;
     --accent-foreground: 0 0% 100%;
-    --accent-soft: 214 100% 96%;
-
+    --accent-soft: 329 100% 97%;
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 329 100% 44%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 214 95% 52%;
-
-    --radius: 0.875rem;
-
-    /* Surfaces */
-    --ink: 222 47% 6%;
-    --ink-foreground: 40 20% 98%;
-    --hairline: 220 13% 88%;
-
-    /* Gradients */
-    --gradient-hero: radial-gradient(ellipse 80% 60% at 50% 0%, hsl(214 95% 52% / 0.18), transparent 60%), linear-gradient(180deg, hsl(222 47% 6%) 0%, hsl(222 47% 9%) 100%);
-    --gradient-aurora: linear-gradient(135deg, hsl(214 95% 62%), hsl(190 90% 60%) 50%, hsl(260 80% 65%));
+    --radius: 0.375rem;
+    --ink: 0 0% 0%;
+    --ink-foreground: 0 0% 100%;
+    --hairline: 0 0% 85%;
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 0%) 0%, hsl(0 0% 15%) 100%);
+    --gradient-aurora: linear-gradient(120deg, #e20074, #9f004f);
     --gradient-fade: linear-gradient(180deg, transparent, hsl(var(--background)));
-
-    /* Shadows */
-    --shadow-soft: 0 1px 2px hsl(222 30% 9% / 0.04), 0 8px 24px -8px hsl(222 30% 9% / 0.08);
-    --shadow-card: 0 1px 0 hsl(222 30% 9% / 0.03), 0 12px 40px -16px hsl(222 30% 9% / 0.12);
-    --shadow-glow: 0 0 0 1px hsl(214 95% 52% / 0.2), 0 20px 60px -20px hsl(214 95% 52% / 0.4);
-
-    /* Motion */
+    --shadow-soft: 0 2px 8px hsl(0 0% 0% / 0.04);
+    --shadow-card: 0 8px 24px hsl(0 0% 0% / 0.06);
+    --shadow-glow: 0 0 0 2px hsl(329 100% 44% / 0.2);
     --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
     --sidebar-background: 0 0% 98%;
@@ -78,18 +76,43 @@
   }
   body {
     @apply bg-background text-foreground font-sans;
-    font-feature-settings: "ss01", "cv11";
+    font-family: "TeleNeo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text-main);
+    letter-spacing: 0;
+  }
+  h1 {
+    font-weight: 800;
+    color: var(--telekom-black);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+  h2,
+  h3 {
+    font-weight: 700;
+    color: var(--telekom-gray-dark);
+    line-height: 1.25;
+  }
+  p,
+  li {
+    font-weight: 400;
+    color: var(--color-text-main);
+    line-height: 1.58;
+  }
+  small {
+    color: var(--color-text-muted);
+    letter-spacing: 0.01em;
   }
   ::selection {
-    background: hsl(var(--accent) / 0.2);
+    background: hsl(var(--accent) / 0.16);
     color: hsl(var(--foreground));
   }
 }
 
 @layer utilities {
   .font-display {
-    font-family: 'Fraunces', ui-serif, Georgia, serif;
-    font-optical-sizing: auto;
+    font-family: "TeleNeo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     letter-spacing: -0.02em;
   }
   .text-balance { text-wrap: balance; }
@@ -98,10 +121,7 @@
   .bg-ink { background-color: hsl(var(--ink)); color: hsl(var(--ink-foreground)); }
   .bg-hero { background: var(--gradient-hero); }
   .text-aurora {
-    background: var(--gradient-aurora);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--telekom-magenta);
   }
 
   .hairline { border-color: hsl(var(--hairline)); }

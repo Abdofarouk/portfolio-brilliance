@@ -117,7 +117,7 @@ const TimelineItem = ({ item, index }: { item: Role; index: number }) => {
 
       <button
         onClick={() => setOpen((o) => !o)}
-        className="group w-full rounded-2xl border border-hairline bg-card p-6 text-left shadow-soft transition-all hover:border-accent/40 hover:shadow-card sm:p-8"
+        className="group w-full rounded-[6px] border border-hairline bg-card p-6 text-left shadow-soft transition-all hover:border-accent/40 hover:shadow-card sm:p-8"
         aria-expanded={open}
       >
         <div className="flex flex-wrap items-baseline justify-between gap-3">
@@ -136,7 +136,7 @@ const TimelineItem = ({ item, index }: { item: Role; index: number }) => {
             </p>
           </div>
           {item.tag === "current" && (
-            <span className="rounded-full bg-accent-soft px-3 py-1 text-xs font-medium text-accent">
+            <span className="rounded-[4px] bg-accent-soft px-3 py-1 text-xs font-semibold text-accent">
               Current
             </span>
           )}
@@ -210,7 +210,7 @@ const Experience = () => {
               </h2>
             </div>
           </div>
-          <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline lg:grid-cols-3">
+          <div className="mt-12 grid gap-px overflow-hidden rounded-[6px] border border-hairline bg-hairline lg:grid-cols-3">
             {education.map((e) => (
               <div key={e.degree} className="bg-card p-8">
                 <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">

@@ -64,10 +64,10 @@ const TechnicalVision = () => {
 
       <section className="bg-background py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <div className="grid gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline md:grid-cols-2">
+          <div className="grid gap-px overflow-hidden rounded-[6px] border border-hairline bg-hairline md:grid-cols-2">
             {principles.map((item) => (
               <article key={item.title} className="bg-card p-8">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                <span className="flex h-11 w-11 items-center justify-center rounded-[6px] bg-accent-soft text-accent">
                   <item.icon className="h-5 w-5" strokeWidth={1.6} />
                 </span>
                 <h2 className="mt-4 font-display text-3xl font-light tracking-tight">{item.title}</h2>
@@ -85,14 +85,14 @@ const TechnicalVision = () => {
             Agent proposal with policy-guarded execution.
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-3">
-            <article className="rounded-2xl border border-hairline bg-card p-6">
+            <article className="rounded-[6px] border border-hairline bg-card p-6">
               <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Step 1</p>
               <h3 className="mt-3 text-lg font-medium">Reasoning layer</h3>
               <p className="mt-2 text-sm text-muted-foreground">
                 Agentic AI proposes optimization actions based on network state and intent.
               </p>
             </article>
-            <article className="rounded-2xl border border-hairline bg-card p-6">
+            <article className="rounded-[6px] border border-hairline bg-card p-6">
               <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Step 2</p>
               <h3 className="mt-3 text-lg font-medium">Policy guardrail layer</h3>
               <p className="mt-2 text-sm text-muted-foreground">
@@ -100,7 +100,7 @@ const TechnicalVision = () => {
                 using network digital twins.
               </p>
             </article>
-            <article className="rounded-2xl border border-hairline bg-card p-6">
+            <article className="rounded-[6px] border border-hairline bg-card p-6">
               <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Step 3</p>
               <h3 className="mt-3 text-lg font-medium">Execution layer</h3>
               <p className="mt-2 text-sm text-muted-foreground">
@@ -119,7 +119,7 @@ const TechnicalVision = () => {
           </h2>
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
             {latencySplit.map((block) => (
-              <article key={block.title} className="rounded-2xl border border-hairline bg-card p-7 shadow-soft">
+              <article key={block.title} className="rounded-[6px] border border-hairline bg-card p-7 shadow-soft">
                 <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{block.subtitle}</p>
                 <h3 className="mt-3 font-display text-3xl font-light tracking-tight">{block.title}</h3>
                 <ul className="mt-5 space-y-3">

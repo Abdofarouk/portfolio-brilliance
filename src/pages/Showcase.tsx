@@ -105,9 +105,9 @@ const Showcase = () => {
               <button
                 key={c}
                 onClick={() => setActive(c)}
-                className={`rounded-full border px-4 py-2 text-sm font-medium transition-all ${
+                className={`rounded-[4px] border px-4 py-2 text-sm font-semibold transition-all ${
                   active === c
-                    ? "border-ink bg-ink text-ink-foreground"
+                    ? "border-primary bg-primary text-primary-foreground"
                     : "border-hairline text-muted-foreground hover:border-foreground/30 hover:text-foreground"
                 }`}
               >
@@ -126,7 +126,7 @@ const Showcase = () => {
                 {[...valueProps, ...valueProps].map((item, i) => (
                   <span
                     key={i}
-                    className="inline-flex whitespace-nowrap rounded-full border border-hairline bg-card/60 px-4 py-1 text-sm font-medium tracking-wide text-foreground/75"
+                    className="inline-flex whitespace-nowrap rounded-[4px] border border-hairline bg-card/60 px-4 py-1 text-sm font-semibold tracking-wide text-foreground/75"
                   >
                     {item}
                   </span>
@@ -157,7 +157,7 @@ const Showcase = () => {
               return (
                 <article
                   key={item.title}
-                  className={`group relative flex flex-col overflow-hidden rounded-3xl border border-hairline bg-card shadow-soft transition-all duration-500 ease-out-expo hover:-translate-y-1 hover:shadow-card ${span}`}
+                  className={`group relative flex flex-col overflow-hidden rounded-[6px] border border-hairline bg-card shadow-soft transition-all duration-500 ease-out-expo hover:-translate-y-1 hover:shadow-card ${span}`}
                 >
                   <div className="relative aspect-[16/10] overflow-hidden bg-secondary">
                     <img
@@ -167,7 +167,7 @@ const Showcase = () => {
                       className="h-full w-full object-cover transition-transform duration-700 ease-out-expo group-hover:scale-105"
                     />
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                    <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-1 text-xs font-medium tracking-wide text-ink backdrop-blur">
+                    <span className="absolute left-5 top-5 rounded-[4px] bg-white/90 px-3 py-1 text-xs font-semibold tracking-wide text-ink">
                       {item.category}
                     </span>
                   </div>
@@ -205,7 +205,7 @@ const Showcase = () => {
           </p>
           <a
             href="mailto:abdelrahman@abdelkader-online.de"
-            className="mt-10 inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-medium text-ink transition-all hover:bg-white/90"
+            className="mt-10 inline-flex items-center gap-2 rounded-[4px] bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-[#c40062]"
           >
             abdelrahman@abdelkader-online.de
           </a>

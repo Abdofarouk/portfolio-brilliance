@@ -66,7 +66,7 @@ const BusinessEvolution = () => {
 
       <section className="bg-background py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <div className="rounded-3xl border border-hairline bg-card p-8 lg:p-10">
+          <div className="rounded-[6px] border border-hairline bg-card p-10 lg:p-12">
             <div className="flex items-center gap-3">
               <Factory className="h-5 w-5 text-accent" />
               <p className="text-xs font-medium uppercase tracking-[0.22em] text-accent">Service portfolio shift</p>
@@ -78,7 +78,7 @@ const BusinessEvolution = () => {
               {serviceShift.map((service) => (
                 <span
                   key={service}
-                  className="inline-flex rounded-full border border-hairline bg-secondary/60 px-4 py-2 text-sm font-medium text-foreground/80"
+                  className="inline-flex rounded-[4px] border border-hairline bg-secondary/60 px-4 py-2 text-sm font-semibold text-foreground/80"
                 >
                   {service}
                 </span>
@@ -101,8 +101,8 @@ const BusinessEvolution = () => {
           </h2>
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
             {cloudModes.map((mode) => (
-              <article key={mode.title} className="rounded-2xl border border-hairline bg-card p-7 shadow-soft">
-                <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-soft text-accent">
+              <article key={mode.title} className="rounded-[6px] border border-hairline bg-card p-7 shadow-soft">
+                <span className="flex h-10 w-10 items-center justify-center rounded-[6px] bg-accent-soft text-accent">
                   <mode.icon className="h-5 w-5" />
                 </span>
                 <h3 className="mt-4 font-display text-3xl font-light tracking-tight">{mode.title}</h3>
@@ -126,10 +126,10 @@ const BusinessEvolution = () => {
           <h2 className="mt-4 max-w-4xl font-display text-4xl font-light tracking-tight sm:text-5xl">
             Monetize edge GPU capacity with disciplined expansion.
           </h2>
-          <div className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline lg:grid-cols-3">
+          <div className="mt-10 grid gap-px overflow-hidden rounded-[6px] border border-hairline bg-hairline lg:grid-cols-3">
             {ranMonetization.map((item) => (
               <article key={item.title} className="bg-card p-8">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                <span className="flex h-11 w-11 items-center justify-center rounded-[6px] bg-accent-soft text-accent">
                   <item.icon className="h-5 w-5" strokeWidth={1.6} />
                 </span>
                 <h3 className="mt-4 font-display text-2xl font-light tracking-tight">{item.title}</h3>

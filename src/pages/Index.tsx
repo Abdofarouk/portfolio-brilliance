@@ -89,14 +89,14 @@ const Index = () => {
           <div className="reveal reveal-delay-3 mt-10 flex flex-wrap gap-3">
             <Link
               to="/experience"
-              className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-ink transition-all hover:bg-white/90"
+              className="group inline-flex items-center gap-2 rounded-[4px] bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-[#c40062]"
             >
               Explore experience
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </Link>
             <Link
               to="/showcase"
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur-md transition-colors hover:bg-white/10"
+              className="inline-flex items-center gap-2 rounded-[4px] border border-white/80 bg-transparent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
               See strategic showcase
             </Link>
@@ -146,13 +146,13 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-[6px] border border-hairline bg-hairline sm:grid-cols-2 lg:grid-cols-3">
             {skills.map((s) => (
               <div
                 key={s.title}
                 className="group relative flex flex-col gap-5 bg-card p-8 transition-colors hover:bg-secondary/40"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                <span className="flex h-11 w-11 items-center justify-center rounded-[6px] bg-accent-soft text-accent">
                   <s.icon className="h-5 w-5" strokeWidth={1.5} />
                 </span>
                 <div>
@@ -177,7 +177,7 @@ const Index = () => {
               From deep research to executive-ready architecture direction.
             </h2>
             <div className="mt-10 flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-ink text-ink-foreground">
+              <div className="flex h-12 w-12 items-center justify-center rounded-[6px] bg-ink text-ink-foreground">
                 <Award className="h-5 w-5" strokeWidth={1.5} />
               </div>
               <div>
@@ -186,7 +186,7 @@ const Index = () => {
               </div>
             </div>
             <div className="mt-4 flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-ink text-ink-foreground">
+              <div className="flex h-12 w-12 items-center justify-center rounded-[6px] bg-ink text-ink-foreground">
                 <Users className="h-5 w-5" strokeWidth={1.5} />
               </div>
               <div>
@@ -214,7 +214,7 @@ const Index = () => {
             <div className="flex gap-3 pt-2">
               <Link
                 to="/experience"
-                className="group inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-ink-foreground transition-all hover:bg-ink/90"
+                className="group inline-flex items-center gap-2 rounded-[4px] bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-[#c40062]"
               >
                 See detailed experience
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
@@ -243,7 +243,7 @@ const Index = () => {
 
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {valuePlan.map((block) => (
-              <article key={block.phase} className="rounded-2xl border border-hairline bg-card p-7 shadow-soft">
+              <article key={block.phase} className="rounded-[6px] border border-hairline bg-card p-7 shadow-soft">
                 <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{block.phase}</p>
                 <h3 className="mt-3 font-display text-2xl font-light tracking-tight">{block.title}</h3>
                 <ul className="mt-5 space-y-3">

@@ -93,7 +93,7 @@ const BusinessEvolution = () => {
           <div className="flex items-center gap-3">
             <CloudCog className="h-5 w-5 text-accent" />
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-accent">
-              Cloud strategy: partner and compete
+              Cloud strategy: partner with intent
             </p>
           </div>
           <h2 className="mt-4 max-w-4xl font-display text-4xl font-light tracking-tight sm:text-5xl">

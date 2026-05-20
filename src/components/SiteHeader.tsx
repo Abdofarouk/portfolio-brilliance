@@ -72,7 +72,7 @@ export const SiteHeader = () => {
         </nav>
 
         <a
-          href="mailto:abdelrahman@abdelkader-online.de"
+          href="mailto:abdelrahman@abdelkader-online.com"
           className="hidden rounded-[4px] bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-colors hover:bg-[#c40062] md:inline-flex"
         >
           Get in touch

@@ -4,7 +4,7 @@ const serviceShift = [
   "AI Factory",
   "GPU as a Service (GPUaaS)",
   "Infrastructure as a Service (IaaS)",
-  "Telecom as a Service (TaaS)",
+  "Training as a Service (TaaS)",
   "Network as an Agent Broker (Internet of Agents)",
 ];
 

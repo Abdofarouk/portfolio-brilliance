@@ -204,10 +204,10 @@ const Showcase = () => {
             If you are scaling AI-native telecom capabilities, I am open to discussing architecture leadership, standards strategy and delivery execution.
           </p>
           <a
-            href="mailto:abdelrahman@abdelkader-online.de"
+            href="mailto:abdelrahman@abdelkader-online.com"
             className="mt-10 inline-flex items-center gap-2 rounded-[4px] bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-[#c40062]"
           >
-            abdelrahman@abdelkader-online.de
+            abdelrahman@abdelkader-online.com
           </a>
         </div>
       </section>

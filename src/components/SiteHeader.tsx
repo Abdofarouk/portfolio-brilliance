@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 
 const nav = [
   { to: "/", label: "Home" },
+  { to: "/technical-vision", label: "Tech Vision" },
+  { to: "/business-evolution", label: "Business" },
   { to: "/experience", label: "Experience" },
   { to: "/showcase", label: "Showcase" },
 ];

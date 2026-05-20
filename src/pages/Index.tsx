@@ -52,7 +52,7 @@ const Index = () => {
   return (
     <>
       {/* HERO */}
-      <section className="relative isolate overflow-hidden bg-ink pt-16">
+      <section className="relative isolate overflow-hidden bg-ink pt-10">
         <img
           src={heroImg}
           alt=""
@@ -62,7 +62,7 @@ const Index = () => {
           className="absolute inset-0 h-full w-full object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-ink/60 to-ink" />
-        <div className="relative mx-auto max-w-7xl px-6 pb-32 pt-28 lg:px-10 lg:pb-44 lg:pt-40">
+        <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-20 lg:px-10 lg:pb-24 lg:pt-28">
           <p className="reveal text-xs font-medium uppercase tracking-[0.22em] text-white/60">
             Lead Architect · Research & Standards Team Lead · Munich
           </p>
@@ -82,15 +82,9 @@ const Index = () => {
               Explore experience
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </Link>
-            <Link
-              to="/experience"
-              className="inline-flex items-center gap-2 rounded-[4px] border border-white/80 bg-transparent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-            >
-              See impact portfolio
-            </Link>
           </div>
           {/* Stats strip */}
-          <dl className="reveal reveal-delay-4 mt-20 grid grid-cols-2 gap-x-8 gap-y-10 border-t border-white/10 pt-10 sm:grid-cols-4">
+          <dl className="reveal reveal-delay-4 mt-12 grid grid-cols-2 gap-x-8 gap-y-8 border-t border-white/10 pt-8 sm:grid-cols-4">
             {stats.map((s) => (
               <div key={s.label}>
                 <dt className="font-display text-4xl font-light text-white sm:text-5xl">{s.value}</dt>

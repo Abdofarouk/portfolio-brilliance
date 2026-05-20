@@ -214,13 +214,12 @@ const Experience = () => {
       <section className="border-b border-hairline bg-background pt-32">
         <div className="mx-auto max-w-7xl px-6 pb-16 lg:px-10 lg:pb-24">
           <p className="reveal text-xs font-medium uppercase tracking-[0.22em] text-accent">
-            Experience & impact
+            Experience
           </p>
           <h1 className="reveal reveal-delay-1 mt-4 max-w-4xl font-display text-5xl font-light leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-            Experience and Proven Impact.
+            From AI-native Telco research, to standards strategy and execution.
           </h1>
           <p className="reveal reveal-delay-2 mt-6 max-w-2xl text-pretty text-lg text-muted-foreground">
-            From AI-native Telco research, to standards strategy and execution.
           </p>
         </div>
       </section>
@@ -236,10 +235,10 @@ const Experience = () => {
         </div>
       </section>
 
-      {/* Impact evidence */}
+      {/* Strategic Impact */}
       <section className="border-y border-hairline bg-secondary/20 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <p className="text-xs font-medium uppercase tracking-[0.22em] text-accent">Impact evidence</p>
+          <p className="text-xs font-medium uppercase tracking-[0.22em] text-accent">Strategic Impact</p>
           <h2 className="mt-4 max-w-4xl font-display text-4xl font-light tracking-tight sm:text-5xl">
             Strategic execution across architecture, standards, research and leadership.
           </h2>

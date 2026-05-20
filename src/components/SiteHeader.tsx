@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 
 const nav = [
   { to: "/", label: "Home" },
+  { to: "/technical-vision", label: "Tech Vision" },
+  { to: "/business-evolution", label: "Business" },
   { to: "/experience", label: "Experience" },
-  { to: "/showcase", label: "Showcase" },
 ];
 
 export const SiteHeader = () => {
@@ -30,7 +31,7 @@ export const SiteHeader = () => {
           : "bg-background/40 backdrop-blur-md"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-10">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-8 lg:px-12">
         <Link to="/" className="group flex items-center gap-2">
           <span
             className={`flex h-8 w-8 items-center justify-center rounded-lg font-display text-base font-medium transition-colors ${
@@ -49,21 +50,19 @@ export const SiteHeader = () => {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-5 md:flex">
           {nav.map((item) => (
             <NavLink
               key={item.to}
               to={item.to}
               end={item.to === "/"}
               className={({ isActive }) =>
-                `relative rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                `relative border-b-2 px-0 py-2 text-sm font-semibold transition-colors ${
                   isActive
-                    ? scrolled || !onDark
-                      ? "bg-secondary text-foreground"
-                      : "bg-white/10 text-white"
+                    ? "border-primary text-primary"
                     : scrolled || !onDark
-                    ? "text-muted-foreground hover:text-foreground"
-                    : "text-white/70 hover:text-white"
+                    ? "border-transparent text-muted-foreground hover:border-primary/50 hover:text-foreground"
+                    : "border-transparent text-white/75 hover:border-white/60 hover:text-white"
                 }`
               }
             >
@@ -73,12 +72,8 @@ export const SiteHeader = () => {
         </nav>
 
         <a
-          href="mailto:abdelrahman@abdelkader-online.com"
-          className={`hidden rounded-full px-4 py-2 text-sm font-medium transition-all md:inline-flex ${
-            scrolled || !onDark
-              ? "bg-ink text-ink-foreground hover:bg-ink/90"
-              : "bg-white text-ink hover:bg-white/90"
-          }`}
+          href="mailto:abdelrahman@abdelkader-online.de"
+          className="hidden rounded-[4px] bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-colors hover:bg-[#c40062] md:inline-flex"
         >
           Get in touch
         </a>

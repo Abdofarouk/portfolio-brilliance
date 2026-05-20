@@ -11,6 +11,11 @@ type Role = {
   tag: "current" | "past" | "edu";
 };
 
+type Item = {
+  title: string;
+  blurb: string;
+};
+
 const timeline: Role[] = [
   {
     role: "Research & Standards Team Leader",
@@ -19,7 +24,7 @@ const timeline: Role[] = [
     period: "2026 — Present",
     tag: "current",
     summary:
-      "Define and execute the roadmap for AI‑native network standardization, enable next generation AI standards experts.",
+      "Lead AI‑native standardization strategy and execution, Enable next generation AI standards experts.",
     highlights: [
       "Define and execute the roadmap for AI‑native network standardization in alignment with Nokia's vision for 6G.",
       "Drive the creation of novel concepts and architectures for AI‑native networks, including system enablers and integration with 6G Core.",
@@ -36,7 +41,7 @@ const timeline: Role[] = [
     period: "2020 — 2025",
     tag: "past",
     summary:
-      "Lead architect for AI‑native 6G across multiple standards organizations, integrating AI/ML/GenAI into core network, RAN and OAM.",
+      "Define AI‑native 6G architecture direction across multiple standards organizations",
     highlights: [
       "Lead architect for AI‑native 6G across 3GPP, O‑RAN, AI‑RAN Alliance and ITU.",
       "Direct technical projects integrating AI/ML/GenAI into 6G cloud‑native core, RAN and network management — both AI for Network and Network for AI.",
@@ -54,7 +59,7 @@ const timeline: Role[] = [
     period: "2015 — 2020",
     tag: "past",
     summary:
-      "Research and publications on AI/ML‑enabled wireless network optimization, energy efficiency and smart grids.",
+      "Built research foundations in AI/ML‑driven optimization for wireless systems, energy efficiency and smart-grid applications.",
     highlights: [
       "Conducted research and authored publications on AI/ML‑enabled wireless network optimization and energy efficiency.",
       "Collaborated with industry partners in joint BMBF projects on AI‑enabled solutions for smart grids.",
@@ -102,6 +107,39 @@ const education = [
   },
 ];
 
+const items: Item[] = [
+  {
+    title: "AI‑Native 6G Reference Architecture",
+    blurb:
+      "Standards target AI architecture spanning RAN, Core, OAM, customer services and monetization with AI lifecycle and governance built in.",
+  },
+  {
+    title: "ETSI ZSM-012 — AI Enablers for Network & Service Automation",
+    blurb:
+      "Rapporteur role delivering a published ETSI specification for AI enablers in closed-loop network and service automation.",
+  },
+  {
+    title: "Agent-Based Concepts for Telco",
+    blurb:
+      "Integration of generative and agentic AI patterns into telco architecture for intent translation, planning and orchestration.",
+  },
+  {
+    title: "MLOps & LLMOps for Telco Workloads",
+    blurb:
+      "Lifecycle pipelines, observability and AI workload orchestration tailored for telecom reliability, scalability and security constraints.",
+  },
+  {
+    title: "AI for the RAN — and the RAN for AI",
+    blurb:
+      "Technical leadership for AI/ML/GenAI in RAN while shaping radio systems that better support emerging AI workloads.",
+  },
+  {
+    title: "100+ Granted Patents",
+    blurb:
+      "Inventor portfolio across AI/ML for wireless networks, automation and 6G, supporting impactful contributions to global standards.",
+  },
+];
+
 const TimelineItem = ({ item, index }: { item: Role; index: number }) => {
   const [open, setOpen] = useState(index === 0);
   return (
@@ -117,7 +155,7 @@ const TimelineItem = ({ item, index }: { item: Role; index: number }) => {
 
       <button
         onClick={() => setOpen((o) => !o)}
-        className="group w-full rounded-2xl border border-hairline bg-card p-6 text-left shadow-soft transition-all hover:border-accent/40 hover:shadow-card sm:p-8"
+        className="group w-full rounded-[6px] border border-hairline bg-card p-6 text-left shadow-soft transition-all hover:border-accent/40 hover:shadow-card sm:p-8"
         aria-expanded={open}
       >
         <div className="flex flex-wrap items-baseline justify-between gap-3">
@@ -136,7 +174,7 @@ const TimelineItem = ({ item, index }: { item: Role; index: number }) => {
             </p>
           </div>
           {item.tag === "current" && (
-            <span className="rounded-full bg-accent-soft px-3 py-1 text-xs font-medium text-accent">
+            <span className="rounded-[4px] bg-accent-soft px-3 py-1 text-xs font-semibold text-accent">
               Current
             </span>
           )}
@@ -176,14 +214,13 @@ const Experience = () => {
       <section className="border-b border-hairline bg-background pt-32">
         <div className="mx-auto max-w-7xl px-6 pb-16 lg:px-10 lg:pb-24">
           <p className="reveal text-xs font-medium uppercase tracking-[0.22em] text-accent">
-            Experience
+            Experience & impact
           </p>
           <h1 className="reveal reveal-delay-1 mt-4 max-w-4xl font-display text-5xl font-light leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-            A trajectory from research bench to standards floor.
+            Experience and Proven Impact.
           </h1>
           <p className="reveal reveal-delay-2 mt-6 max-w-2xl text-pretty text-lg text-muted-foreground">
-            Tap any role to expand the detail. Highlights are drawn from delivered work in
-            architecture, standards leadership and team building.
+            From AI-native Telco research, to standards strategy and execution.
           </p>
         </div>
       </section>
@@ -199,6 +236,31 @@ const Experience = () => {
         </div>
       </section>
 
+      {/* Impact evidence */}
+      <section className="border-y border-hairline bg-secondary/20 py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10">
+          <p className="text-xs font-medium uppercase tracking-[0.22em] text-accent">Impact evidence</p>
+          <h2 className="mt-4 max-w-4xl font-display text-4xl font-light tracking-tight sm:text-5xl">
+            Strategic execution across architecture, standards, research and leadership.
+          </h2>
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {items.map((item) => (
+              <article
+                key={item.title}
+                className="group relative flex flex-col overflow-hidden rounded-[6px] border border-hairline bg-card shadow-soft transition-all hover:-translate-y-1 hover:shadow-card"
+              >
+                <div className="flex flex-1 flex-col justify-between gap-5 p-7">
+                  <div>
+                    <h3 className="font-display text-2xl font-light leading-snug tracking-tight">{item.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.blurb}</p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Education */}
       <section className="border-t border-hairline bg-secondary/40 py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -210,7 +272,7 @@ const Experience = () => {
               </h2>
             </div>
           </div>
-          <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline lg:grid-cols-3">
+          <div className="mt-12 grid gap-px overflow-hidden rounded-[6px] border border-hairline bg-hairline lg:grid-cols-3">
             {education.map((e) => (
               <div key={e.degree} className="bg-card p-8">
                 <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">

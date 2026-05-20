@@ -21,7 +21,7 @@ const items: Item[] = [
     title: "AI‑Native 6G Reference Architecture",
     category: "Architecture",
     blurb:
-      "End‑to‑end blueprint spanning RAN, Core, OAM, customer services and monetization — with data flows, model LCM, observability and security baked in.",
+      "Operator-ready target architecture spanning RAN, Core, OAM, customer services and monetization with lifecycle governance built in.",
     image: imgArch,
     meta: "Cross‑domain · Cloud‑native",
     accent: true,
@@ -30,7 +30,7 @@ const items: Item[] = [
     title: "ETSI ZSM‑012 — AI Enablers for Network & Service Automation",
     category: "Standards",
     blurb:
-      "Rapporteur of the ETSI specification defining AI enablers for closed‑loop network and service automation.",
+      "Rapporteur role delivering a published ETSI specification for AI enablers in closed-loop network and service automation.",
     image: imgStandards,
     meta: "Published Specification",
   },
@@ -38,7 +38,7 @@ const items: Item[] = [
     title: "Agent‑Based Concepts for Telco",
     category: "Research",
     blurb:
-      "Integration of generative and agentic AI patterns into cloud‑native telco architectures, spanning intent translation, planning and orchestration.",
+      "Integration of generative and agentic AI patterns into cloud-native telco architecture for intent translation, planning and orchestration.",
     image: imgAgents,
     meta: "Concept · Prototype",
   },
@@ -46,7 +46,7 @@ const items: Item[] = [
     title: "MLOps & LLMOps for Telco Workloads",
     category: "Architecture",
     blurb:
-      "Lifecycle pipelines, observability and AI/ML workload orchestration designed for the realities of telecom operations.",
+      "Lifecycle pipelines, observability and AI workload orchestration tailored for telecom reliability, scalability and security constraints.",
     image: imgMlops,
     meta: "Pipelines · LCM",
   },
@@ -54,7 +54,7 @@ const items: Item[] = [
     title: "AI for the RAN — and the RAN for AI",
     category: "Research",
     blurb:
-      "Technical direction of projects bringing AI/ML/GenAI into RAN, while shaping a RAN that natively serves AI workloads.",
+      "Technical leadership for AI/ML/GenAI in RAN while shaping radio systems that better support emerging AI workloads.",
     image: imgRan,
     meta: "O‑RAN · AI‑RAN Alliance",
   },
@@ -62,7 +62,7 @@ const items: Item[] = [
     title: "100+ Granted Patents",
     category: "Leadership",
     blurb:
-      "Inventor portfolio across AI/ML for wireless networks, automation and 6G — recognized inside and beyond the standards community.",
+      "Inventor portfolio across AI/ML for wireless networks, automation and 6G, reinforcing execution credibility with innovation depth.",
     image: imgPatents,
     meta: "Inventor",
   },
@@ -70,13 +70,20 @@ const items: Item[] = [
     title: "5G Transmission Protocols",
     category: "Research",
     blurb:
-      "Earlier research at Ericsson and TU Dresden on 5G transmission technologies and energy‑efficient wireless optimization.",
+      "Foundational work at Ericsson and TU Dresden on 5G transmission technologies and energy-efficient wireless optimization.",
     image: imgFiber,
     meta: "Foundational work",
   },
 ];
 
 const categories = ["All", "Architecture", "Standards", "Research", "Leadership"] as const;
+const valueProps = [
+  "Architecture Ownership",
+  "Stakeholder Alignment",
+  "Standards Leadership",
+  "Innovation Execution",
+  "Cross-Functional Delivery",
+];
 
 const Showcase = () => {
   const [active, setActive] = useState<(typeof categories)[number]>("All");
@@ -91,22 +98,41 @@ const Showcase = () => {
             Showcase
           </p>
           <h1 className="reveal reveal-delay-1 mt-4 max-w-4xl font-display text-5xl font-light leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-            A gallery of capabilities — architecture, standards, research, leadership.
+            Evidence of strategic and technical execution.
           </h1>
           <div className="mt-12 flex flex-wrap gap-2">
             {categories.map((c) => (
               <button
                 key={c}
                 onClick={() => setActive(c)}
-                className={`rounded-full border px-4 py-2 text-sm font-medium transition-all ${
+                className={`rounded-[4px] border px-4 py-2 text-sm font-semibold transition-all ${
                   active === c
-                    ? "border-ink bg-ink text-ink-foreground"
+                    ? "border-primary bg-primary text-primary-foreground"
                     : "border-hairline text-muted-foreground hover:border-foreground/30 hover:text-foreground"
                 }`}
               >
                 {c}
               </button>
             ))}
+          </div>
+        </div>
+        <div className="border-t border-hairline bg-secondary/30 py-4">
+          <div className="mx-auto max-w-7xl px-6 lg:px-10">
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-muted-foreground">
+              Role value proposition
+            </p>
+            <div className="mt-3 overflow-hidden">
+              <div className="flex w-max marquee gap-6 pr-6">
+                {[...valueProps, ...valueProps].map((item, i) => (
+                  <span
+                    key={i}
+                    className="inline-flex whitespace-nowrap rounded-[4px] border border-hairline bg-card/60 px-4 py-1 text-sm font-semibold tracking-wide text-foreground/75"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -131,7 +157,7 @@ const Showcase = () => {
               return (
                 <article
                   key={item.title}
-                  className={`group relative flex flex-col overflow-hidden rounded-3xl border border-hairline bg-card shadow-soft transition-all duration-500 ease-out-expo hover:-translate-y-1 hover:shadow-card ${span}`}
+                  className={`group relative flex flex-col overflow-hidden rounded-[6px] border border-hairline bg-card shadow-soft transition-all duration-500 ease-out-expo hover:-translate-y-1 hover:shadow-card ${span}`}
                 >
                   <div className="relative aspect-[16/10] overflow-hidden bg-secondary">
                     <img
@@ -141,7 +167,7 @@ const Showcase = () => {
                       className="h-full w-full object-cover transition-transform duration-700 ease-out-expo group-hover:scale-105"
                     />
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                    <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-1 text-xs font-medium tracking-wide text-ink backdrop-blur">
+                    <span className="absolute left-5 top-5 rounded-[4px] bg-white/90 px-3 py-1 text-xs font-semibold tracking-wide text-ink">
                       {item.category}
                     </span>
                   </div>
@@ -172,16 +198,16 @@ const Showcase = () => {
             Open to conversations
           </p>
           <h2 className="mt-4 max-w-3xl font-display text-4xl font-light leading-tight tracking-tight sm:text-5xl">
-            Architecting AI‑native networks is a team sport.
+            Open to architecting measurable AI impact in telecom.
           </h2>
           <p className="mt-5 max-w-xl text-pretty text-white/70">
-            If you're building the next generation of telecommunications, I'd love to hear about it.
+            If you are scaling AI-native telecom capabilities, I am open to discussing architecture leadership, standards strategy and delivery execution.
           </p>
           <a
-            href="mailto:abdelrahman@abdelkader-online.com"
-            className="mt-10 inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-medium text-ink transition-all hover:bg-white/90"
+            href="mailto:abdelrahman@abdelkader-online.de"
+            className="mt-10 inline-flex items-center gap-2 rounded-[4px] bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-[#c40062]"
           >
-            abdelrahman@abdelkader-online.com
+            abdelrahman@abdelkader-online.de
           </a>
         </div>
       </section>

@@ -3,23 +3,61 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight, Cpu, Network, Bot, Layers, Radio, GitBranch, Award, Users } from "lucide-react";
 
 const skills = [
-  { icon: Network, title: "AI‑Native 6G Architecture", body: "End‑to‑end design across RAN, Core, OAM, customer & monetization domains." },
-  { icon: Bot, title: "Generative & Agentic AI", body: "Deep Learning, GenAI and agent‑based concepts integrated into telco systems." },
-  { icon: Layers, title: "Cloud‑Native Telco", body: "MLOps, LLMOps, lifecycle management and AI workload orchestration." },
-  { icon: Radio, title: "RAN · Core · OAM", body: "AI for the network, and network for AI — across all functional planes." },
-  { icon: GitBranch, title: "Standards Leadership", body: "3GPP, O‑RAN, ETSI, ITU and the AI‑RAN Alliance — rapporteur of ETSI ZSM‑012." },
-  { icon: Cpu, title: "From Vision to Blueprint", body: "Translate business needs into architectures, RFIs and pilot programs." },
+  { icon: Network, title: "AI‑Native 6G Architecture", body: "Own end‑to‑end target architectures across RAN, Core, OAM, customer and monetization domains." },
+  { icon: Bot, title: "Generative & Agentic AI", body: "Apply Deep Learning, GenAI and agent‑based concepts to real operator workflows." },
+  { icon: Layers, title: "Cloud‑Native Telco", body: "Design MLOps/LLMOps lifecycle management and AI workload orchestration for production scale." },
+  { icon: Radio, title: "RAN · Core · OAM", body: "Bridge AI for the network and network for AI across all functional planes." },
+  { icon: GitBranch, title: "Standards Leadership", body: "Drive consensus in 3GPP, O‑RAN, ETSI, ITU and AI‑RAN Alliance; rapporteur of ETSI ZSM‑012." },
+  { icon: Cpu, title: "From Business Need to Delivery", body: "Translate operator priorities into architectural blueprints, RFIs and pilot-ready execution plans." },
 ];
 
 const stats = [
   { value: "100+", label: "Granted patents" },
   { value: "10+", label: "Keynotes & panels" },
   { value: "10+", label: "Peer‑reviewed papers" },
-  { value: "4", label: "Standards bodies" },
+  { value: "5", label: "Standards forums" },
 ];
 
-const partners = [
-  "Nokia", "Deutsche Telekom", "3GPP", "O‑RAN", "ETSI", "ITU", "AI‑RAN Alliance", "TU Dresden", "KIT", "Ericsson",
+const strategicFocusAreas = [
+  "AI‑Native Architecture",
+  "RAN Intelligence",
+  "Core Automation",
+  "AIOps",
+  "MLOps / LLMOps",
+  "Network & Service Orchestration",
+  "Interoperability",
+  "TCO Efficiency",
+  "Customer Value Creation",
+];
+
+const valuePlan = [
+  {
+    phase: "Days 0‑60",
+    title: "Prioritize high-value AI use cases",
+    points: [
+      "Map operator priorities across network and IT with a balanced focus on TCO efficiency and new customer value.",
+      "Translate the selected use cases into architectural requirements and success metrics.",
+      "Align executive and technical stakeholders on governance, scope and delivery outcomes.",
+    ],
+  },
+  {
+    phase: "Days 61‑120",
+    title: "Design the target AI architecture blueprint",
+    points: [
+      "Define the end‑to‑end blueprint: data flows, model lifecycle, MLOps/LLMOps, observability, interoperability and security.",
+      "Validate blueprint readiness against active and in‑development use cases.",
+      "Run a structured gap assessment and convert gaps into implementation actions and RFIs.",
+    ],
+  },
+  {
+    phase: "Days 121‑180",
+    title: "Deliver measurable proof points",
+    points: [
+      "Drive at least one high‑impact initiative to PoC or pilot stage with measurable operational or customer impact.",
+      "Present an executive roadmap from blueprint to scaled deployment.",
+      "Embed innovation practices that keep standards, architecture and delivery continuously aligned.",
+    ],
+  },
 ];
 
 const Index = () => {
@@ -41,26 +79,26 @@ const Index = () => {
             Lead Architect · Research Team Lead · Munich
           </p>
           <h1 className="reveal reveal-delay-1 mt-6 max-w-5xl font-display text-5xl font-light leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl xl:text-[5.5rem]">
-            Designing the <em className="not-italic text-aurora">AI‑native</em> fabric of next‑generation networks.
+            Turning <em className="not-italic text-aurora">AI ambition</em> into operator‑grade network architecture.
           </h1>
           <p className="reveal reveal-delay-2 mt-8 max-w-2xl text-pretty text-lg leading-relaxed text-white/70">
-            I'm Abdelrahman Abdelkader — a Ph.D. architect leading expert AI researchers shaping
-            6G across RAN, Core, OAM, customer services and monetization. Standards rapporteur,
-            inventor of 100+ patents, and a translator between business intent and technical reality.
+            I am Abdelrahman Abdelkader, Ph.D. and AI‑native telecom architect. I help operators
+            convert strategic AI priorities into secure, scalable blueprints across RAN, Core, OAM,
+            customer services and monetization, then guide execution through standards and pilots.
           </p>
           <div className="reveal reveal-delay-3 mt-10 flex flex-wrap gap-3">
             <Link
               to="/experience"
-              className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-ink transition-all hover:bg-white/90"
+              className="group inline-flex items-center gap-2 rounded-[4px] bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-[#c40062]"
             >
-              Explore the journey
+              Explore experience
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </Link>
             <Link
-              to="/showcase"
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur-md transition-colors hover:bg-white/10"
+              to="/experience"
+              className="inline-flex items-center gap-2 rounded-[4px] border border-white/80 bg-transparent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
-              View showcase
+              See impact portfolio
             </Link>
           </div>
 
@@ -77,8 +115,11 @@ const Index = () => {
 
         {/* Marquee */}
         <div className="relative border-y border-white/10 bg-white/[0.02] py-5">
-          <div className="flex w-max marquee gap-12 px-6">
-            {[...partners, ...partners].map((p, i) => (
+          <p className="px-6 text-xs font-medium uppercase tracking-[0.2em] text-white/45">
+            Strategic focus areas
+          </p>
+          <div className="mt-3 flex w-max marquee gap-12 px-6">
+            {[...strategicFocusAreas, ...strategicFocusAreas].map((p, i) => (
               <span key={i} className="whitespace-nowrap text-sm font-medium tracking-wide text-white/40">
                 {p}
               </span>
@@ -96,22 +137,22 @@ const Index = () => {
                 Skills at a glance
               </p>
               <h2 className="mt-4 font-display text-4xl font-light leading-tight tracking-tight sm:text-5xl">
-                Architectural depth across the AI‑native stack.
+                Architectural depth with business-first execution.
               </h2>
             </div>
             <p className="max-w-md text-pretty text-muted-foreground">
-              A capability set sharpened over a decade of standards work, research and
-              cross‑functional architecture leadership.
+              Positioning at the intersection of architecture leadership, standards influence and
+              measurable operator outcomes.
             </p>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-[6px] border border-hairline bg-hairline sm:grid-cols-2 lg:grid-cols-3">
             {skills.map((s) => (
               <div
                 key={s.title}
                 className="group relative flex flex-col gap-5 bg-card p-8 transition-colors hover:bg-secondary/40"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                <span className="flex h-11 w-11 items-center justify-center rounded-[6px] bg-accent-soft text-accent">
                   <s.icon className="h-5 w-5" strokeWidth={1.5} />
                 </span>
                 <div>
@@ -133,10 +174,10 @@ const Index = () => {
               Career summary
             </p>
             <h2 className="mt-4 font-display text-4xl font-light leading-[1.05] tracking-tight sm:text-5xl">
-              A decade translating research into shipped network standards.
+              From deep research to executive-ready architecture direction.
             </h2>
             <div className="mt-10 flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-ink text-ink-foreground">
+              <div className="flex h-12 w-12 items-center justify-center rounded-[6px] bg-ink text-ink-foreground">
                 <Award className="h-5 w-5" strokeWidth={1.5} />
               </div>
               <div>
@@ -145,7 +186,7 @@ const Index = () => {
               </div>
             </div>
             <div className="mt-4 flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-ink text-ink-foreground">
+              <div className="flex h-12 w-12 items-center justify-center rounded-[6px] bg-ink text-ink-foreground">
                 <Users className="h-5 w-5" strokeWidth={1.5} />
               </div>
               <div>
@@ -157,30 +198,64 @@ const Index = () => {
 
           <div className="space-y-6 lg:col-span-7">
             <p className="font-display text-2xl font-light leading-relaxed text-foreground sm:text-[1.7rem] sm:leading-[1.45]">
-              "Lead Architect and Research Team Lead with deep technical expertise alongside
-              leadership of expert AI researchers building next‑generation telecommunication systems."
+              Lead Architect and Research Team Lead combining deep AI/telco expertise with
+              cross‑functional leadership in international organizations.
             </p>
             <p className="text-pretty text-base leading-relaxed text-muted-foreground">
-              Extensive experience leading the definition of end‑to‑end AI‑native architecture for
-              6G — spanning RAN, Core, Network & Service Management, customer services and
-              monetization — while aligning requirements, architectural decisions and customer
-              feedback in a cross‑functional, international organization.
+              I lead the definition of end‑to‑end AI‑native architecture for 6G across RAN, Core,
+              network and service management, customer services and monetization, while keeping
+              technical decisions tied to business requirements and customer feedback.
             </p>
             <p className="text-pretty text-base leading-relaxed text-muted-foreground">
-              Proven track record integrating Deep Learning, Generative AI and agent‑based
-              concepts into cloud‑native telco architectures; skilled at translating complex
-              business requirements into technical specifications and coordinating RFI discussions.
-              Recognized expert with 100+ granted patents and 10+ keynotes, webinars and panels.
+              My track record includes integrating Deep Learning, GenAI and agent‑based patterns
+              into cloud‑native telecom architecture, leading AI standardization, and shaping RFIs,
+              workshops and delivery plans that executive and engineering teams can execute.
             </p>
             <div className="flex gap-3 pt-2">
               <Link
                 to="/experience"
-                className="group inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-ink-foreground transition-all hover:bg-ink/90"
+                className="group inline-flex items-center gap-2 rounded-[4px] bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-[#c40062]"
               >
-                See full experience
+                See detailed experience
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* OPERATOR IMPACT PLAN */}
+      <section className="relative bg-background py-28 lg:py-36">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10">
+          <div className="max-w-3xl">
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-accent">
+              Strategic fit for Deutsche Telekom
+            </p>
+            <h2 className="mt-4 font-display text-4xl font-light leading-tight tracking-tight sm:text-5xl">
+              A practical first‑180‑day value plan.
+            </h2>
+            <p className="mt-5 text-pretty text-base leading-relaxed text-muted-foreground">
+              This operating model reflects how I would approach AI‑native transformation in a
+              complex operator environment: start with business priorities, convert them into a
+              robust architecture blueprint, and deliver measurable proof points quickly.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {valuePlan.map((block) => (
+              <article key={block.phase} className="rounded-[6px] border border-hairline bg-card p-7 shadow-soft">
+                <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{block.phase}</p>
+                <h3 className="mt-3 font-display text-2xl font-light tracking-tight">{block.title}</h3>
+                <ul className="mt-5 space-y-3">
+                  {block.points.map((point) => (
+                    <li key={point} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
+                      <span className="mt-2 h-1 w-1 flex-none rounded-full bg-accent" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
           </div>
         </div>
       </section>

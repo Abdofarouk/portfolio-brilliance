@@ -19,7 +19,7 @@ const timeline: Role[] = [
     period: "2026 — Present",
     tag: "current",
     summary:
-      "Define and execute the roadmap for AI‑native network standardization, driving consensus aligned with Nokia's 6G vision.",
+      "Define and execute the roadmap for AI‑native network standardization, enable next generation AI standards experts.",
     highlights: [
       "Define and execute the roadmap for AI‑native network standardization in alignment with Nokia's vision for 6G.",
       "Drive the creation of novel concepts and architectures for AI‑native networks, including system enablers and integration with 6G Core.",
@@ -36,7 +36,7 @@ const timeline: Role[] = [
     period: "2020 — 2025",
     tag: "past",
     summary:
-      "Lead architect for AI‑native 6G across multiple standards organizations, integrating AI/ML/GenAI into cloud‑native core, RAN and OAM.",
+      "Lead architect for AI‑native 6G across multiple standards organizations, integrating AI/ML/GenAI into core network, RAN and OAM.",
     highlights: [
       "Lead architect for AI‑native 6G across 3GPP, O‑RAN, AI‑RAN Alliance and ITU.",
       "Direct technical projects integrating AI/ML/GenAI into 6G cloud‑native core, RAN and network management — both AI for Network and Network for AI.",

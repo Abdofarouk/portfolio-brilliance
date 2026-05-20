@@ -141,7 +141,7 @@ const Index = () => {
               Career summary
             </p>
             <h2 className="mt-4 font-display text-4xl font-light leading-[1.05] tracking-tight sm:text-5xl">
-              From deep research to executive-ready architecture direction.
+              From deep research to standards strategy and architecture.
             </h2>
             <div className="mt-10 flex items-center gap-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-[6px] bg-ink text-ink-foreground">
@@ -175,8 +175,8 @@ const Index = () => {
             </p>
             <p className="text-pretty text-base leading-relaxed text-muted-foreground">
               My track record includes integrating Deep Learning, GenAI and agent‑based patterns
-              into cloud‑native telecom architecture, leading AI standardization, and shaping RFIs,
-              workshops and delivery plans that executive and engineering teams can execute.
+              into cloud‑native telecom architecture, leading AI standardization, shaping RFIs, and
+              co-creating with customers.
             </p>
             <div className="flex gap-3 pt-2">
               <Link

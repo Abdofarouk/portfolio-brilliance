@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 
 const nav = [
   { to: "/", label: "Home" },
-  { to: "/technical-vision", label: "Tech Vision" },
-  { to: "/business-evolution", label: "Business" },
   { to: "/experience", label: "Experience" },
+  { to: "/technical-vision", label: "Technology vision" },
+  { to: "/business-evolution", label: "Business value" },
 ];
 
 export const SiteHeader = () => {

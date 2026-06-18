@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">AI for the RAN and the RAN for AI</title>
+  <desc id="desc">Bidirectional architecture showing AI improving radio networks and radio infrastructure supporting AI workloads.</desc>
+  <defs>
+    <linearGradient id="bgRan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071223"/>
+      <stop offset="100%" stop-color="#0d1f3b"/>
+    </linearGradient>
+    <linearGradient id="sig" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#43b7ff"/>
+      <stop offset="100%" stop-color="#8ef0ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bgRan)"/>
+  <text x="90" y="100" fill="#deecff" font-size="34" font-family="Inter, Arial, sans-serif" font-weight="600">AI for the RAN - RAN for AI</text>
+  <text x="90" y="138" fill="#90add4" font-size="20" font-family="Inter, Arial, sans-serif">Bidirectional technical direction for intelligent radio systems</text>
+
+  <rect x="120" y="200" width="620" height="650" rx="28" fill="#0d1b33" stroke="#2f4f7a" stroke-width="2"/>
+  <text x="160" y="255" fill="#dcecff" font-size="29" font-family="Inter, Arial, sans-serif">AI for Network</text>
+  <text x="160" y="287" fill="#84a4ce" font-size="18" font-family="Inter, Arial, sans-serif">Optimization, prediction, closed-loop control</text>
+
+  <rect x="160" y="330" width="540" height="120" rx="16" fill="#132b4a" stroke="#3d6c9f"/>
+  <text x="190" y="390" fill="#e8f3ff" font-size="24" font-family="Inter, Arial, sans-serif">Traffic Prediction Models</text>
+
+  <rect x="160" y="490" width="540" height="120" rx="16" fill="#132b4a" stroke="#3d6c9f"/>
+  <text x="190" y="550" fill="#e8f3ff" font-size="24" font-family="Inter, Arial, sans-serif">RAN Energy Optimization</text>
+
+  <rect x="160" y="650" width="540" height="120" rx="16" fill="#132b4a" stroke="#3d6c9f"/>
+  <text x="190" y="710" fill="#e8f3ff" font-size="24" font-family="Inter, Arial, sans-serif">Self-Healing Operations</text>
+
+  <rect x="860" y="200" width="620" height="650" rx="28" fill="#0d1b33" stroke="#2f4f7a" stroke-width="2"/>
+  <text x="900" y="255" fill="#dcecff" font-size="29" font-family="Inter, Arial, sans-serif">Network for AI</text>
+  <text x="900" y="287" fill="#84a4ce" font-size="18" font-family="Inter, Arial, sans-serif">Deterministic connectivity for AI workloads</text>
+
+  <rect x="900" y="330" width="540" height="120" rx="16" fill="#132b4a" stroke="#3d6c9f"/>
+  <text x="930" y="390" fill="#e8f3ff" font-size="24" font-family="Inter, Arial, sans-serif">Edge Compute Connectivity</text>
+
+  <rect x="900" y="490" width="540" height="120" rx="16" fill="#132b4a" stroke="#3d6c9f"/>
+  <text x="930" y="550" fill="#e8f3ff" font-size="24" font-family="Inter, Arial, sans-serif">Latency-Aware Scheduling</text>
+
+  <rect x="900" y="650" width="540" height="120" rx="16" fill="#132b4a" stroke="#3d6c9f"/>
+  <text x="930" y="710" fill="#e8f3ff" font-size="24" font-family="Inter, Arial, sans-serif">AI Workload Transport Slices</text>
+
+  <g stroke="url(#sig)" stroke-width="5" fill="none">
+    <path d="M740 390h120"/>
+    <path d="M740 550h120"/>
+    <path d="M740 710h120"/>
+    <path d="M860 390l-20-14"/>
+    <path d="M860 390l-20 14"/>
+    <path d="M740 550l20-14"/>
+    <path d="M740 550l20 14"/>
+    <path d="M860 710l-20-14"/>
+    <path d="M860 710l-20 14"/>
+  </g>
+</svg>

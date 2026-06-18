@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">5G Transmission Protocols</title>
+  <desc id="desc">Foundational research visualization for transmission paths, protocol timing, and energy-efficient optimization.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071223"/>
+      <stop offset="100%" stop-color="#0c1d37"/>
+    </linearGradient>
+    <linearGradient id="fiberA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2da8ff"/>
+      <stop offset="100%" stop-color="#79e4ff"/>
+    </linearGradient>
+    <linearGradient id="fiberB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6c8dff"/>
+      <stop offset="100%" stop-color="#2da8ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <g stroke="#1f3558" stroke-width="1">
+    <path d="M0 120h1600M0 240h1600M0 360h1600M0 480h1600M0 600h1600M0 720h1600M0 840h1600"/>
+    <path d="M160 0v1000M320 0v1000M480 0v1000M640 0v1000M800 0v1000M960 0v1000M1120 0v1000M1280 0v1000M1440 0v1000"/>
+  </g>
+
+  <text x="80" y="92" fill="#d8e8ff" font-size="32" font-family="Inter, Arial, sans-serif" font-weight="600">5G Transmission Protocols</text>
+  <text x="80" y="132" fill="#8facd4" font-size="20" font-family="Inter, Arial, sans-serif">Foundational research in protocol timing, throughput reliability, and energy efficiency</text>
+
+  <rect x="120" y="190" width="1360" height="640" rx="28" fill="#0c1a31" stroke="#2c4a73" stroke-width="2"/>
+
+  <g fill="none" stroke-width="5" stroke-linecap="round">
+    <path d="M180 760 C320 640, 460 760, 600 640 S880 760, 1020 640 S1300 760, 1440 640" stroke="url(#fiberA)"/>
+    <path d="M180 700 C320 580, 460 700, 600 580 S880 700, 1020 580 S1300 700, 1440 580" stroke="url(#fiberB)"/>
+    <path d="M180 640 C320 520, 460 640, 600 520 S880 640, 1020 520 S1300 640, 1440 520" stroke="url(#fiberA)"/>
+    <path d="M180 580 C320 460, 460 580, 600 460 S880 580, 1020 460 S1300 580, 1440 460" stroke="url(#fiberB)"/>
+  </g>
+
+  <g fill="#8fd8ff">
+    <circle cx="360" cy="606" r="7"/><circle cx="720" cy="560" r="7"/><circle cx="1060" cy="604" r="7"/><circle cx="1320" cy="548" r="7"/>
+    <circle cx="360" cy="666" r="7"/><circle cx="720" cy="620" r="7"/><circle cx="1060" cy="664" r="7"/><circle cx="1320" cy="608" r="7"/>
+  </g>
+
+  <g>
+    <rect x="210" y="250" width="350" height="110" rx="14" fill="#122743" stroke="#34608e"/>
+    <text x="245" y="293" fill="#d5e6ff" font-size="26" font-family="Inter, Arial, sans-serif">Protocol Timing</text>
+    <text x="245" y="327" fill="#8facd4" font-size="18" font-family="Inter, Arial, sans-serif">Scheduling + HARQ loops</text>
+
+    <rect x="625" y="250" width="350" height="110" rx="14" fill="#122743" stroke="#34608e"/>
+    <text x="660" y="293" fill="#d5e6ff" font-size="26" font-family="Inter, Arial, sans-serif">Throughput Stability</text>
+    <text x="660" y="327" fill="#8facd4" font-size="18" font-family="Inter, Arial, sans-serif">Latency + reliability envelope</text>
+
+    <rect x="1040" y="250" width="350" height="110" rx="14" fill="#122743" stroke="#34608e"/>
+    <text x="1075" y="293" fill="#d5e6ff" font-size="26" font-family="Inter, Arial, sans-serif">Energy Optimization</text>
+    <text x="1075" y="327" fill="#8facd4" font-size="18" font-family="Inter, Arial, sans-serif">Resource-efficient operation</text>
+  </g>
+
+  <g stroke="#65dcff" stroke-width="3">
+    <path d="M385 360v115"/>
+    <path d="M800 360v115"/>
+    <path d="M1215 360v115"/>
+  </g>
+</svg>
